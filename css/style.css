@@ -1,0 +1,37 @@
+body {
+    background-color: antiquewhite;
+    font-family: "Caveat", cursive;
+}
+p {
+    font-family: "Bad Script", cursive;
+    font-size: 24px;
+  }
+a {
+      text-decoration: none;
+      font-family: "Bad Script", cursive;
+      font-weight: 600;
+      line-height: 2;
+  }
+h1{
+    font-family: "Caveat", cursive; 
+}
+
+#mindmap {
+    width: 100vw;
+    height: 100vh;
+  }
+  #mindmap path {
+    stroke: green;
+  }
+
+  #mindmap circle {
+    stroke: #44b78b;
+  }
+
+  #mindmap circle {
+    fill: #44b78b;
+  }
+
+  #mindmap rect {
+    fill: black;
+  }

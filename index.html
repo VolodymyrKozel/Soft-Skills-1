@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Зроби це зараз</title>
+  </head>
+  <body>
+    <svg id="mindmap"></svg>
+    <script src="https://cdn.jsdelivr.net/npm/d3@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.7.6/dist/browser/view.min.js"></script>
+    <script>
+      ((t, ...s) => {
+        const { Markmap: a } = window.markmap;
+        (a.processors = s), a.create("svg#mindmap", null, t);
+      })({
+        t: "heading",
+        d: 1,
+        v: '<h1 class="header">Зроби це зараз</h1>',
+        c: [
+          {
+            t: "list_item",
+            d: 2,
+            v: '<a href="https://markmap.js.org/">Накрийте на стіл</a>',
+            c: [
+              {
+                t: "list_item",
+                d: 3,
+                v: "Визначення мети переможця",
+                c: [
+                  {
+                    t: "list_item",
+                    d: 4,
+                    v: "Усвідомлення мети та палке бажання досягти її.",
+                  },
+                  {
+                    t: "list_item",
+                    d: 4,
+                    v: "Чіткість як ключовий елемент особистої продуктивності.",
+                  },
+                ],
+              },
+              {
+                t: "list_item",
+                d: 3,
+                v: "Зрозуміння і запис цілей",
+                c: [
+                  {
+                    t: "list_item",
+                    d: 4,
+                    v: "Важливість чіткого усвідомлення того, чого хочете досягти.",
+                  },
+                  {
+                    t: "list_item",
+                    d: 4,
+                    v: "Запис цілей на папері для надання їм форми та енергії.",
+                  },
+                ],
+              },
+              {
+                t: "list_item",
+                d: 3,
+                v: "Встановлення термінів",
+                c: [
+                  {
+                    t: "list_item",
+                    d: 4,
+                    v: "Важливість визначення термінів досягнення мети.",
+                  },
+                  {
+                    t: "list_item",
+                    d: 4,
+                    v: "Проміжні терміни для надання нагальності цілям.",
+                  },
+                ],
+              },
+              {
+                t: "list_item",
+                d: 3,
+                v: "Створення переліку завдань",
+                c: [
+                  {
+                    t: "list_item",
+                    d: 4,
+                    v: "Складення переліку усього, що потрібно для досягнення мети.",
+                  },
+                ],
+              },
+              {
+                t: "list_item",
+                d: 3,
+                v: "Організація переліку у план",
+                c: [
+                  {
+                    t: "list_item",
+                    d: 4,
+                    v: "Встановлення пріоритетів та послідовності завдань.",
+                  },
+                  {
+                    t: "list_item",
+                    d: 4,
+                    v: "Перетворення переліку в організований план.",
+                  },
+                ],
+              },
+              {
+                t: "list_item",
+                d: 3,
+                v: "Дія і виконання",
+                c: [
+                  {
+                    t: "list_item",
+                    d: 4,
+                    v: "Регулярні дії та виконання як ключ до успіху.",
+                  },
+                  {
+                    t: "list_item",
+                    d: 4,
+                    v: "Негайно беріться до виконання плану.",
+                  },
+                ],
+              },
+              {
+                t: "list_item",
+                d: 3,
+                v: "Щоденна діяльність",
+                c: [
+                  {
+                    t: "list_item",
+                    d: 4,
+                    v: "Введення в щоденний розклад дій, які наблизять до досягнення мети.",
+                  },
+                  {
+                    t: "list_item",
+                    d: 4,
+                    v: "Постійний рух уперед та невідкладні дії щоденно.",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Заздалегідь плануйте кожен день",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "До всього застосовуйте правило 80/20",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Думайте про наслідки",
+            c: [
+              { t: "list_item", d: 3, v: "Sturm/Hagel: Abgesichert" },
+              {
+                t: "list_item",
+                d: 3,
+                v: "Risikoadresse",
+                c: [
+                  { t: "list_item", d: 4, v: "Straße: Tulpenweg" },
+                  { t: "list_item", d: 4, v: "Hausnummer: 7" },
+                  { t: "list_item", d: 4, v: "PLZ: 70173" },
+                  { t: "list_item", d: 4, v: "Ort: Stuttgart" },
+                ],
+              },
+              { t: "list_item", d: 3, v: "Bewohnt: Ja" },
+              { t: "list_item", d: 3, v: "Nutzungsart: Gewerblich" },
+              { t: "list_item", d: 3, v: "Keller: Nein" },
+              { t: "list_item", d: 3, v: "Baujahr: 1935" },
+              { t: "list_item", d: 3, v: "Unterversicherungsverzicht: Nein" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Займайтесь творчою прокрастинацією",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Постійно використовуйте метод АБВГД",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Зосередьтесь на сферах ключових результатів",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Скористайтеся законом трьох",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Перед початком ретельно готуйтесь",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Рухайтесь від бочки до бочки",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Удосконалюйте свої ключові навички",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Використовуйте свої особливі таланти",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Визначте основні перепони",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Тисніть на себе",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Максимізуйте свої особисті сили",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Мотивуйте себе діяти",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Позбудьтесь технологічного рабства",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Діліть завдання на частини",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Створюйте великі блоки часу",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Розвиньте відчуття крайньої необхідності",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+          {
+            t: "list_item",
+            d: 2,
+            v: "Виконуйте завдання по одному",
+            c: [
+              { t: "list_item", d: 3, v: "?" },
+              { t: "list_item", d: 3, v: "?" },
+            ],
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
