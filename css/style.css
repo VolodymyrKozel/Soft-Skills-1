@@ -4,7 +4,7 @@ body {
 }
 p {
     font-family: "Bad Script", cursive;
-    font-size: 24px;
+    line-height: 1.2;
   }
 a {
       text-decoration: none;
@@ -12,8 +12,12 @@ a {
       font-weight: 600;
       line-height: 2;
   }
-h1{
+h1,h2,h3{
     font-family: "Caveat", cursive; 
+}
+div {
+    font-family: "Bad Script", cursive;
+    font-size: 24px;  
 }
 
 #mindmap {
