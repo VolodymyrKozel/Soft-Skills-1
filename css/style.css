@@ -1,4 +1,6 @@
 body {
+  width: 100vw;
+  height: 100vh;
     background-color: antiquewhite;
     font-family: "Caveat", cursive;
 }
@@ -14,10 +16,23 @@ a {
   }
 h1,h2,h3{
     font-family: "Caveat", cursive; 
+    text-align: center;
 }
-div {
-    font-family: "Bad Script", cursive;
-    font-size: 24px;  
+.text-center {
+  text-align: center;
+}
+.relative::before {
+  content: "";
+  position: relative;
+}
+.relative {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.book-cover {
+  max-width: 100%;
+  display: block;
 }
 
 #mindmap {
