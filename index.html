@@ -13,16 +13,31 @@
     <title>Зроби це зараз</title>
   </head>
   <body>
-    <div class="relative">
-      <a href="https://drive.google.com/file/d/1-LZE3Ef2I10o01anVKX2xzju8_sbDEJ8/view" target="_blank">
-      <img class="book-cover" src="./images/book-cover.png" alt="eat that frog book cover">
-    </a>
+    <button id="myBtn" class="fixed btn">&Congruent;</button>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
       <h2>Mind map</h2>
-      <p class="text-center">Створено колективом: blended-06</p>
     </div>
+    <div class="modal-body">
+      <a href="https://drive.google.com/file/d/1-LZE3Ef2I10o01anVKX2xzju8_sbDEJ8/view" target="_blank">
+        <img class="book-cover" src="./images/book-cover.png" alt="eat that frog book cover">
+      </a>
+    </div>
+    <div class="modal-footer">
+      <h3>Створено колективом: blended-06</h3>
+    </div>
+  </div>
+</div>
     <svg id="mindmap"></svg>
     <script src="https://cdn.jsdelivr.net/npm/d3@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.7.6/dist/browser/view.min.js"></script>
+    <script src="./js/main.js"></script>
     <script>
       ((t, ...s) => {
         const { Markmap: a } = window.markmap;
