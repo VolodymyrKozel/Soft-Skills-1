@@ -76,7 +76,6 @@ h1,h2,h3{
   border: none;
   color: white;
   background-color: #5cb85c;
-  cursor: pointer;
 
 }
 /* The Close Button */
@@ -88,10 +87,17 @@ h1,h2,h3{
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.btn:hover,
+.btn:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+
+}
+.btn:hover,
+.btn:focus {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .modal-header {
